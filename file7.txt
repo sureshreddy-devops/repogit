@@ -1,0 +1,18 @@
+Git Push Tags
+<repository>: The repository is the destination of a push operation. It can be either a URL or the name of a remote repository.
+
+<refspec>: It specifies the destination ref to update source object.
+
+--all: The word "all" stands for all branches. It pushes all branches.
+
+--prune: It removes the remote branches that do not have a local counterpart. Means, if you have a remote branch say demo, if this branch does not exist locally, then it will be removed.
+
+--mirror: It is used to mirror the repository to the remote. Updated or Newly created local refs will be pushed to the remote end. It can be force updated on the remote end. The deleted refs will be removed from the remote end.
+
+--dry-run: Dry run tests the commands. It does all this except originally update the repository.
+
+--tags: It pushes all local tags.
+
+--delete: It deletes the specified branch.
+
+-u: It creates an upstream tracking connection. It is very useful if you are going to push the branch for the first time.
